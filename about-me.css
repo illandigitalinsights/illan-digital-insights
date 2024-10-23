@@ -1,0 +1,82 @@
+*{
+margin:0;
+padding:0;
+} 
+
+.floating-page {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 40%; /* Width of the floating page */
+    height: 100%; /* Full height */
+    background-color: white; /* Background color */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: right 0.3s ease; /* Smooth transition */
+    padding: 0px; /* Padding inside the floating page */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.floating-page.active {
+    right: 0; /* Slide into view */
+}
+
+#close-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for close button */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.photo {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: white;
+    width: 100%; /* Set width for the photo container */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 0%; /* Add padding for spacing */
+}
+
+.photo img {
+    max-width: 30%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+	margin-top:1%;
+}
+
+.about-me {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: white;
+    padding: 1%; /* Add padding for spacing */
+    padding-top:1%;
+	padding-left:3%;
+	padding-right:3%;
+}
+
+.about-me h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    font-size: 1.5rem; /* Increase font size for the heading */
+    color: #333; /* Dark grey color for better readability */
+	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+.about-me p {
+    line-height: 1.2; /* Improve line spacing for readability */
+
+    color: #555; /* Slightly lighter grey for text color */
+	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+.l4 {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: white;
+    width: 100%; /* Set width for the photo container */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 1%; /* Add padding for spacing */
+}
+.l4 img {
+    max-width: 30%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+	margin-top:1%;
+}
