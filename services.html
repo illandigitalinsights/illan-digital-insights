@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Illan Digital Insights</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/services.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/about-me.css">
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<header>
+
+<div class="cabecera">
+    <a href="index.html" title="Illan Digital Insights">
+        <img src="photos/idi2.png" alt="Illan Digital Insights">
+    </a>
+</div>
+
+<div class="menu">
+    <ul>
+        <li id="about-me-link" style="cursor: pointer;">About Me</li>
+        <li><a href="services.html" title="Services">Services</a></li>
+        <li><a href="project-showcases.html" title="Project Showcases">Project Showcases</a></li>
+        <li id="contact-link">Contact</li>
+    </ul>
+</div>
+
+<div class="floating-page" id="floating-page">
+    <button id="close-button">X</button>
+     <div class="about-me-main">
+	  <div class = "photo">
+	  <img src="photos/photo-frame.png"></a>
+	  </div>
+  <div class="about-me">
+    <h2>About Me</h2>
+    <p>
+        I am a marketing graduate based in St Albans, England, specializing in data-driven, digital insights and visualization. 
+		After working at Selfridges and as a consultant at Freemavens, I began my journey as a digital analyst.<br><br>
+    </p>
+    <p>
+        My education includes specialized training in GA4, SQL, Python, BigQuery, and data visualization tools such as Power BI, 
+        Looker Studio or Tableau.<br><br>
+    </p>
+    <p>
+        With a Level 4 Apprenticeship in Data Analysis and certifications in Google Analytics and Contentsquare, I strive to expand my expertise in digital marketing and data analysis while keeping up with the latest trends.<br><br>
+    </p>
+    <p>
+        <b>Connect with me to make the most of your data!</b>
+    </p>
+</div>
+
+ <div class = "l4">
+	  <img src="photos/l4.png"></a>
+	  </div>
+	  
+    </div>
+</div>
+
+<div class="contact" id="contact-info" style="display: none;">
+    <p>
+        <a href="tel:+4407397193661">
+            <img src="photos/phone.png" alt="Phone" />
+        </a> 
+        (+44) 07397 193661
+    </p> 
+    <p>
+        <a href="tel:+4407397193661">
+            <img src="photos/whatsapp.jpg" alt="WhatsApp" />
+        </a> 
+        (+44) 07397 193661
+    </p>
+    <p>
+        <a href="mailto:contact@mail.com">
+            <img src="photos/mail.png" alt="Email" />
+        </a>
+        contact@illandigitalinsights.com
+    </p>
+    <p>
+        <a href="https://www.linkedin.com/in/fatimalopezillan/" title="LinkedIn">
+            <img src="photos/linkedin icon.jpg" alt="LinkedIn">
+        </a>
+        LinkedIn
+    </p>
+</div>
+
+</header>
+
+<script>
+    // Script to open the floating page for "About Me"
+    document.getElementById('about-me-link').addEventListener('click', function() {
+        document.getElementById('floating-page').classList.add('active');
+    });
+
+    document.getElementById('close-button').addEventListener('click', function() {
+        document.getElementById('floating-page').classList.remove('active');
+    });
+
+    // Script to toggle contact info visibility
+    document.getElementById('contact-link').addEventListener('click', function() {
+        const contactInfo = document.getElementById('contact-info');
+        contactInfo.style.display = contactInfo.style.display === 'none' || contactInfo.style.display === '' ? 'block' : 'none';
+    });
+</script>
+</header>
+<body>
+
+<div class = "services-wrap">
+  <div class="container">
+       
+<ul class = "tool-images">
+			<li><img src="photos/bigquery.png" alt="big query"></li>
+			<li><img src="photos/ga4.png" alt="ga4"></li>
+			<li><img src="photos/powerbi.png" alt="power bi"></li>
+			<li><img src="photos/adobe.png" alt="adobe analytics"></li>
+			<li><img src="photos/tableau.png" alt="tableau"></li>
+			<li><img src="photos/python.png" alt="python"></li>
+			<li><img src="photos/looker.png" alt="looker studio"></li>
+			<li><img src="photos/matplot.png" alt="matplot"></li>
+			</ul>
+			
+			 <h1>Services and Data Solutions</h1>
+
+<div class = "services-description">
+
+	
+        <div class="service">
+		
+				<div class = "icon">
+		<img src="photos/sourcing.png" alt="data sourcing">
+        </div>	
+		
+            <h2>Data Sourcing and Integration</h2>
+            <p>Sourcing data from various platforms like BigQuery, Google Analytics 4, and Adobe Analytics. I use methods like SQL, Python or Excel to clean, normalize, and integrate data into a unified format.</p>
+            <h3>Tools & Skills:</h3>
+            <ul>
+                <li>BigQuery</li>
+                <li>Google Analytics 4</li>
+                <li>Adobe Analytics</li>
+                <li>SQL</li>
+                <li>Python</li>
+            </ul>
+        </div>
+		
+
+
+
+		
+        <div class="service">
+		
+				<div class = "icon">
+		<img src="photos/visualization.png" alt="data visualization">
+        </div>	
+		
+            <h2>Data Visualization</h2>
+            <p>Transform your data into insightful visualizations using tools like Tableau, Looker Studio, and Power BI. I can create dynamic graphs, trends, and tables that make data easy to understand.</p>
+            <h3>Tools & Skills:</h3>
+            <ul>
+                <li>Tableau</li>
+                <li>Looker Studio</li>
+                <li>Power BI</li>
+				<li>MatPlot</li>
+                <li>Data Visualization Techniques</li>
+            </ul>
+        </div>
+
+
+		
+        <div class="service">
+		
+				<div class = "icon">
+		<img src="photos/reporting.png" alt="data reporting">
+        </div>	
+		
+            <h2>Data Reporting and Analysis</h2>
+            <p>Analysing and understanding descriptive and prescriptive data with logical skills to understand different situations, presenting it in an user-friendly approach tailored to different stakeholder levels. 
+			I provide comprehensive reports and audits to help you to drive your decision-making.</p>
+            <h3>Tools & Skills:</h3>
+            <ul>
+                <li>Data Analysis Techniques</li>
+                <li>Reporting Tools</li>
+                <li>Stakeholder Engagement</li>
+                <li>Statistical Analysis</li>
+                <li>Business Intelligence</li>
+            </ul>
+        </div>
+    </div>
+	</div>
+</div>
+
+<div class = "project-slider">
+<div class ="projects">
+<h1>Project showcases</h1><br>
+</div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="photos/slider/bq tables.jpg" alt="Image 1">
+                <div class="title">Creation and structure of BQ tables</div>
+            </div>
+            <div class="slide">
+                <img src="photos/slider/clp looker.png" alt="Image 2">
+                <div class="title">E-commerce dashboard in Looker Studio</div>
+            </div>
+            <div class="slide">
+                <img src="photos/slider/payment methods pbi.png" alt="Image 3">
+                <div class="title">Payment methods dashboard in Power Bi</div>
+            </div>
+            <div class="slide">
+                <img src="photos/slider/kxp looker.png" alt="Image 4">
+                <div class="title">Navigation KPIs dashboard in Looker Studio</div>
+            </div>
+            <div class="slide">
+                <img src="photos/slider/linkedin looker.png" alt="Image 5">
+                <div class="title">Linkeding Insights dashboard in Looker Studio</div>
+            </div>
+            <div class="slide">
+                <img src="photos/slider/cookie consent.png" alt="Image 6">
+                <div class="title">Python code to decrypt a JSON file</div>
+            </div>
+        </div>
+    </div>
+	</div>
+ 
+<div class="footer">
+    <p>Reserved Rights © ; 2024</p>
+    <p>Designed by: Fatima Lopez Illan</p>
+    <p>Email: <a href="mailto:contact@illandigitalinsights.com">contact@illandigitalinsights.com</a></p>
+    <p>Website: <a href="http://www.illandigitalinsights.com">www.illandigitalinsights.com</a></p>
+</div>	
+
+<script src="slider.js"></script>
+
+</body>
+</html>
