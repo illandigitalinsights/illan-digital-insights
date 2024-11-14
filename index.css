@@ -1,0 +1,127 @@
+*{
+margin:0;
+padding:0;
+}
+
+.main {
+    display: flex; /* Use flexbox for layout */
+    width: 100vw; /* Full viewport width */
+    background-color: #43585d;
+    margin-top: 1%; /* Adjust as needed */
+}
+.profile {
+    display: flex; /* Make the list a flex container */
+    width: 70%; /* Make it full width */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+    margin-left: 15%; /* Remove default margin */
+    align-items: stretch; /* Make all items stretch to the same height */
+}
+
+.profile li {
+    flex: 1; /* Each list item takes equal width */
+}
+
+.profile img {
+    width: 100%; /* Image covers the full width of the left half */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure main matches the height of the tallest profile image */
+.main {
+    align-items: stretch; /* Stretch the main container to match profile items */
+}
+
+.profile .profile-summary {
+	font-family: Poppins, sans-serif; /* Use Poppins font */;
+    margin: 0; /* Remove default margins */
+    padding: 1.8rem; /* Add some padding for text */
+	color: white;
+	margin-left: 20%; /* Adjust as needed */
+    margin-top: 5%; /* Adjust as needed */
+
+}
+
+.profile h1 {
+	font-family: Poppins, sans-serif; 
+    font-size: 1.5rem; /*Adjust heading size */
+	color: white;
+}
+.profile h3{
+	font-family: Poppins, sans-serif; 
+    font-size: 1.3rem; /* Adjust heading size */
+	color: white;
+}
+
+.profile p {
+	font-family: Poppins, sans-serif; 
+    font-size: 1rem; /* Adjust paragraph size */
+	color: white;
+}
+
+.profile ul 
+
+{
+    font-size: 1rem; /* Adjust paragraph size */
+	font-family: Poppins, sans-serif; 
+	color: white;
+}
+.tool-services {
+	
+	margin-top: 2%; /* Space below the heading */
+    text-align: center; /* Center the heading */
+		font-family: Poppins, sans-serif; 
+	  color: #283234; /* Title color */	
+}
+
+.tools {
+	width: 80%;
+	margin-left:10%;
+		margin-top: 1%; /* Space below the heading */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center tools horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+	font-family: 'Poppins', sans-serif;
+}
+
+.tool {
+    margin: 2%; /* Space between tools */
+	width: 20%;
+	height:50%;
+    display: flex; /* Use flexbox for layout of image and title */
+    flex-direction: column; /* Stack image on top of title */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+}
+
+.tool img {
+    width: 60%; /* Maintain original width */
+    height: 120px; /* Set a fixed height for all images */
+}
+
+.tool .title {
+    margin-top: 5px; /* Space between image and title */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 1rem; /* Adjust font size */
+    margin-top: 5px; /* Space between image and title */
+    color: black; /* Title color */
+    padding: 5px; /* Padding around title */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the title text */
+	font-family: Poppins, sans-serif; 
+    text-decoration: underline; /* Underline the text */
+    font-weight: bold; /* Make the font bold */
+}
+
+
+
+.footer {
+	font-family: Poppins, sans-serif; 
+    font-size: 0.8rem; /* Adjust heading size */
+    color: white; /* Change text color to white for contrast */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+	background-color: #283234;
+		padding-top: 2%;
+		padding-bottom: 2%;
+}

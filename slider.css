@@ -1,0 +1,61 @@
+.project-slider{
+	background-color: #43585d;
+
+}
+
+
+.projects h1 {
+	font-family: Poppins, sans-serif; 
+    font-size: 1.5rem; /* Adjust heading size */
+    color: white; /* Change text color to white for contrast */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+	background-color: #43585d;
+		margin-top: 3%;
+		padding-top: 2%;
+
+}
+
+.slider {
+    overflow: hidden; /* Hide overflow */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3%;	
+    padding-top: 2%;
+}
+
+.slides {
+    display: flex; /* Use flexbox to align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.slide {
+    display: flex; /* Allow flex properties */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    flex: 0 0 calc(33.33% - 20px); /* Each slide takes about one-third minus padding */
+    border: 5px solid white; /* White frame around each slide */
+    border-radius: 5px; /* Rounded corners for the frame */
+    padding: 10px; /* Inner padding for spacing inside the frame */
+    background-color: white; /* Background color of the slide */
+    margin: 8px; /* Gap between slides */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.slides img {
+    width: 100%; /* Maintain original width within the frame */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    display: block; /* Remove space below images */
+}
+
+.slide .title {
+    margin-top: 5px; /* Space between image and title */
+    color: black; /* Title color */
+    padding: 8px; /* Padding around title */
+    border-radius: 2px; /* Rounded corners */
+    text-align: center; /* Center the title text */
+    font-family: Poppins, sans-serif; 
+	font-weight: bold;
+    background-color: transparent; /* Ensure title background is transparent */
+}

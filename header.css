@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white; /* Set header color to white */
+}
+
+.intstyle {
+    font-size: 50px;
+}
+
+
+.cabecera {
+    display: flex; /* Use flexbox for centering */
+    justify-content: left; /* Align items to the left */
+    padding-top: 3%; /* Adjust as needed */
+    margin-left: 15%; /* Adjust as needed */
+	margin-top:-2%;
+}
+
+.cabecera img {
+    width: 15vw; /* Set width to 15% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.menu {
+    background-color: white; /* White background */
+    padding: 0.5%; /* Add some padding */
+    margin-top: -2%; /* Adjust as needed */
+    margin-right: 15%;
+}
+
+.menu ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-end; /* Align menu items to the right */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.menu a {
+    color: black; /* Black text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #43585d; /* Change color on hover */
+}
+
+.menu li {
+    margin: 0 15px; /* Space between menu items */
+    font-size: 1.2rem; /* Adjust font size */
+    color: black; /* Black text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+.menu li:hover {
+    color: #43585d; /* Change color on hover */
+}
+
+
+
+.contact {
+    background-color: #f9f9f9; /* Light background for the contact section */
+    border: 1px solid #ccc; /* Light border */
+    padding: 0.5%; /* Padding for spacing */
+    margin-top: 1%; /* Space above the contact section */
+    margin-left: 15%; 
+    margin-right: 15%; 
+	
+}
+
+.contact p {
+    margin: 0.5% 0; /* Space between paragraphs */
+	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+	font-size: 0.8rem; /* Adjust font size */
+}
+
+.contact img {
+    width: 20px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between image and text */
+}
