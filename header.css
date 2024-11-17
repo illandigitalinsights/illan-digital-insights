@@ -91,40 +91,36 @@ header {
 
 
 /* Mobile */
+
 @media (max-width: 768px) {
-    .cabecera {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        margin-left: 0; /* Remove left margin */
+    .menu {
+        display: none; /* Hide the menu by default on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width */
     }
 
-    .cabecera img {
-        width: 50vw; /* Increase image size for mobile */
+    .menu-icon {
+        cursor: pointer; /* Change cursor to pointer on hover */
+        font-size: 2rem; /* Increase icon size */
     }
 
-   @media (max-width: 768px) {
-
-    .menu.show {
-        display: flex; /* Show menu as a flex container when toggled */
-    }
-
-    .contact {
-        margin-left: 5%; /* Reduce left margin */
-        margin-right: 5%; /* Reduce right margin */
-    }
-
-    .contact p {
-        font-size: 0.7rem; /* Adjust font size for mobile */
+    .menu li {
+        margin: 5px 0; /* Space between menu items */
+        font-size: 1rem; /* Adjust font size */
     }
 }
 
-/* Ensure the menu is always visible on larger screens */
-@media (min-width: 769px) {
-    .menu {
-        display: flex; /* Show menu normally on larger screens */
-        position: static; /* Change positioning */
-        width: auto; /* Allow natural width */
-        height: auto; /* Allow natural height */
-        box-shadow: none; /* Remove shadow */
-    }
+/* Show menu when toggled */
+
+.menu.show {
+    display: flex; /* Show menu as a flex container */
+}
+
+.contact {
+    margin-left: 5%; /* Reduce left margin */
+    margin-right: 5%; /* Reduce right margin */
+}
+
+.contact p {
+    font-size: 0.7rem; /* Adjust font size for mobile */
 }
