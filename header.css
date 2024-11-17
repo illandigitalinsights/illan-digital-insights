@@ -102,20 +102,28 @@ header {
         width: 50vw; /* Increase image size for mobile */
     }
 
+   @media (max-width: 768px) {
     .menu {
-        margin-right: 0; /* Remove right margin */
-        padding: 2%; /* Increase padding */
+        display: none; /* Hide the menu by default on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width */
     }
 
-    .menu ul {
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center; /* Center menu items */
+    .menu-icon {
+        cursor: pointer; /* Change cursor to pointer on hover */
+        font-size: 2rem; /* Increase icon size */
     }
 
     .menu li {
-        margin: 10px 0; /* Space between menu items */
+        margin: 5px 0; /* Space between menu items */
         font-size: 1rem; /* Adjust font size */
     }
+}
+
+/* Show menu when toggled */
+.menu.show {
+    display: flex; /* Show menu as a flex container */
+}
 
     .contact {
         margin-left: 5%; /* Reduce left margin */
