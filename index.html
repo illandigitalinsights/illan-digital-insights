@@ -16,85 +16,84 @@
 
 <header>
 
-<div class="cabecera">
-    <a href="index.html" title="Illan Digital Insights">
-        <img src="idi2.png" alt="Illan Digital Insights">
-    </a>
-</div>
-
-<script>
-    function toggleMenu() {
-        const menu = document.getElementById('menu');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    }
-</script>
-
-<div class="menu">
-    <ul>
-        <li id="about-me-link" style="cursor: pointer;">About Me</li>
-        <li><a href="services.html" title="Services">Services</a></li>
-        <li><a href="project-showcases.html" title="Project Showcases">Project Showcases</a></li>
-        <li id="contact-link">Contact</li>
-    </ul>
-</div>
-
-<div class="floating-page" id="floating-page">
-    <button id="close-button">X</button>
-     <div class="about-me-main">
-	  <div class = "photo">
-	  <img src="photo-frame.png"></a>
-	  </div>
- <div class="about-me">
-    <h2>About Me</h2>
-    <p>
-        I am a marketing graduate based in St Albans, England, specializing in data-driven, digital insights and visualization. 
-		After working at Selfridges and as a consultant at Freemavens, I began my journey as a digital analyst.<br><br>
-    </p>
-    <p>
-        My education includes specialized training in GA4, SQL, Python, BigQuery, and data visualization tools such as Power BI, 
-        Looker Studio or Tableau.<br><br>
-    </p>
-    <p>
-        With a Level 4 Apprenticeship in Data Analysis and certifications in Google Analytics and Contentsquare, I strive to expand my expertise in digital marketing and data analysis while keeping up with the latest trends.<br><br>
-    </p>
-    <p>
-        <b>Connect with me to make the most of your data!</b>
-    </p>
-</div>
-
- <div class = "l4">
-	  <img src="l4.png"></a>
-	  </div>
-	  
+    <div class="cabecera">
+        <a href="index.html" title="Illan Digital Insights">
+            <img src="idi2.png" alt="Illan Digital Insights">
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Menu icon for mobile -->
     </div>
-</div>
 
-<div class="contact" id="contact-info" style="display: none;">
-    <p>
-        <a href="tel:+4407397193661">
-            <img src="phone.png" alt="Phone" />
-        </a> 
-        (+44) 07397 193661
-    </p> 
-    <p>
-        <a href="tel:+4407397193661">
-            <img src="whatsapp.jpg" alt="WhatsApp" />
-        </a> 
-        (+44) 07397 193661
-    </p>
-    <p>
-        <a href="mailto:contact@mail.com">
-            <img src="mail.png" alt="Email" />
-        </a>
-        contact@illandigitalinsights.com
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/fatimalopezillan/" title="LinkedIn">
-            <img src="linkedin icon.jpg" alt="LinkedIn">
-        </a>
-        LinkedIn
-    </p>
-</div>
+    <div class="menu" id="menu">
+        <ul>
+            <li id="about-me-link" style="cursor: pointer;">About Me</li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="project-showcases.html" title="Project Showcases">Project Showcases</a></li>
+            <li id="contact-link">Contact</li>
+        </ul>
+    </div>
+
+    <div class="floating-page" id="floating-page">
+        <button id="close-button">X</button>
+        <div class="about-me-main">
+            <div class="photo">
+                <img src="photo-frame.png" alt="About Me">
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    I am a marketing graduate based in St Albans, England, specializing in data-driven, digital insights and visualization. 
+                    After working at Selfridges and as a consultant at Freemavens, I began my journey as a digital analyst.<br><br>
+                </p>
+                <p>
+                    My education includes specialized training in GA4, SQL, Python, BigQuery, and data visualization tools such as Power BI, 
+                    Looker Studio or Tableau.<br><br>
+                </p>
+                <p>
+                    With a Level 4 Apprenticeship in Data Analysis and certifications in Google Analytics and Contentsquare, I strive to expand my expertise in digital marketing and data analysis while keeping up with the latest trends.<br><br>
+                </p>
+                <p>
+                    <b>Connect with me to make the most of your data!</b>
+                </p>
+            </div>
+            <div class="l4">
+                <img src="l4.png" alt="Additional Info">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-info" style="display: none;">
+        <p>
+            <a href="tel:+4407397193661">
+                <img src="phone.png" alt="Phone" />
+            </a> 
+            (+44) 07397 193661
+        </p> 
+        <p>
+            <a href="tel:+4407397193661">
+                <img src="whatsapp.jpg" alt="WhatsApp" />
+            </a> 
+            (+44) 07397 193661
+        </p>
+        <p>
+            <a href="mailto:contact@mail.com">
+                <img src="mail.png" alt="Email" />
+            </a>
+            contact@illandigitalinsights.com
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/fatimalopezillan/" title="LinkedIn">
+                <img src="linkedin icon.jpg" alt="LinkedIn">
+            </a>
+            LinkedIn
+        </p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show'); // Toggle the 'show' class
+        }
+    </script>
 
 </header>
 
