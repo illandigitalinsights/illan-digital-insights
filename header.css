@@ -111,7 +111,6 @@ header {
 }
 
 /* Show menu when toggled */
-
 .menu.show {
     display: flex; /* Show menu as a flex container */
 }
@@ -123,4 +122,11 @@ header {
 
 .contact p {
     font-size: 0.7rem; /* Adjust font size for mobile */
+}
+
+/* Hide the menu toggler on larger screens */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
 }
