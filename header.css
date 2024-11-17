@@ -107,7 +107,18 @@ header {
     .menu li {
         margin: 5px 0; /* Space between menu items */
         font-size: 1rem; /* Adjust font size */
-    }
+	     
+    .menu ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: block; /* Use block display for vertical layout */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.menu ul li {
+    margin: 10px 0; /* Add some spacing between items */
+}
+
 }
 
 /* Show menu when toggled */
