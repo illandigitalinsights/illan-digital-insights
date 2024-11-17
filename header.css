@@ -88,3 +88,41 @@ header {
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Space between image and text */
 }
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .cabecera {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .cabecera img {
+        width: 50vw; /* Increase image size for mobile */
+    }
+
+    .menu {
+        margin-right: 0; /* Remove right margin */
+        padding: 2%; /* Increase padding */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Space between menu items */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .contact {
+        margin-left: 5%; /* Reduce left margin */
+        margin-right: 5%; /* Reduce right margin */
+    }
+
+    .contact p {
+        font-size: 0.7rem; /* Adjust font size for mobile */
+    }
+}
