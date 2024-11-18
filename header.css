@@ -107,7 +107,7 @@ header {
   .menu-icon {
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 2rem; /* Increase icon size */
-    margin-right: 15px; /* Add space between icon and menu */
+    margin-left: 15px; /* Add space between icon and menu */
 }
 
     .menu li {
