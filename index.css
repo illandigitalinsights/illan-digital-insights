@@ -158,9 +158,17 @@ padding:0;
         padding: 1rem; /* Adjust padding for smaller screens */
     }
 
-.tools {
-   
-    display: block; /* Use flexbox for layout */
-    
+.tools { 
+    display: block; /* Use flexbox for layout */  
+}
+
+.tool {
+    margin: 2%; /* Space between tools */
+	width: 80%;
+	height:50%;
+    display: flex; /* Use flexbox for layout of image and title */
+    flex-direction: column; /* Stack image on top of title */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
 }
 }
