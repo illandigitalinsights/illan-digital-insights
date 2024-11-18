@@ -99,10 +99,11 @@ header {
         width: 100%; /* Full width */
     }
 
-    .menu-icon {
-        cursor: pointer; /* Change cursor to pointer on hover */
-        font-size: 2rem; /* Increase icon size */
-    }
+  .menu-icon {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 2rem; /* Increase icon size */
+    margin-right: 15px; /* Add space between icon and menu */
+}
 
     .menu li {
         margin: 5px 0; /* Space between menu items */
