@@ -108,6 +108,8 @@ header {
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 2rem; /* Increase icon size */
     margin-left: 15px; /* Add space between icon and menu */
+    float: left; /* Floats the element to the left */
+    
 }
 
     .menu li {
