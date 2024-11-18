@@ -135,12 +135,21 @@ padding:0;
     }
 
     .profile {
+        display: block;
         width: 100%; /* Full width on mobile */
         margin-left: 0; /* Remove left margin on mobile */
     }
 
     .profile li {
         margin-bottom: 1rem; /* Add spacing between items */
+        display: block; /* Ensure each list item is displayed as a block */
+}
+
+.profile img {
+    width: 100%; /* Image covers the full width of the list item */
+    height: auto; /* Maintain aspect ratio */
+}
+
     }
 
     .profile .profile-summary {
