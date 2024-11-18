@@ -93,6 +93,11 @@ header {
 /* Mobile */
 
 @media (max-width: 768px) {
+
+.cabecera img {
+    width: 70vw; /* Set width to 15% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
     .menu {
         display: none; /* Hide the menu by default on mobile */
         flex-direction: column; /* Stack menu items vertically */
