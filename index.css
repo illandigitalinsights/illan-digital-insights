@@ -125,3 +125,27 @@ padding:0;
 		padding-top: 2%;
 		padding-bottom: 2%;
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .profile {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
+    .profile li {
+        margin-bottom: 1rem; /* Add spacing between items */
+    }
+
+    .profile .profile-summary {
+        margin-left: 0; /* Center text on mobile */
+        margin-top: 2%; /* Adjust as needed */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
