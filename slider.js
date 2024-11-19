@@ -1,15 +1,20 @@
-// script.js
 let currentIndex = 0; // Current index of the image
 const slides = document.querySelector('.slides');
 const totalImages = slides.children.length; // Total number of images
 
+// Function to calculate the width percentage based on the screen size
+function getWidthPercentage() {
+    return window.innerWidth < 768 ? 100 : (100 / 3); // 100% for mobile, 33.33% for desktop
+}
+
 function slide() {
-    currentIndex = (currentIndex + 1) % (totalImages - 2); // Loop through original images only
-    const offset = -currentIndex * (100 / 3); // Calculate offset for three images
+    const offset = -currentIndex * getWidthPercentage(); // Calculate offset based on current index
     slides.style.transform = `translateX(${offset}%)`; // Move the slides
 
-    // Reset position when reaching the cloned images
-    if (currentIndex === totalImages - 3) {
+    currentIndex = (currentIndex + 1) % totalImages; // Loop through all images
+
+    // Reset position when reaching the last image
+    if (currentIndex === 0) {
         setTimeout(() => {
             slides.style.transition = 'none'; // Disable transition for reset
             currentIndex = 0; // Reset index
@@ -23,3 +28,8 @@ function slide() {
 
 // Set interval for automatic sliding
 setInterval(slide, 3000); // Change image every 3 seconds
+
+// Update the slide on resize to accommodate responsive design
+window.addEventListener('resize', () => {
+    slides.style.transform = `translateX(${-currentIndex * getWidthPercentage()}%)`; // Adjust position on resize
+});
