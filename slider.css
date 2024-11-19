@@ -1,26 +1,23 @@
-.project-slider{
-	background-color: #43585d;
-
+.project-slider {
+    background-color: #43585d;
 }
 
-
 .projects h1 {
-	font-family: Poppins, sans-serif; 
+    font-family: Poppins, sans-serif; 
     font-size: 1.5rem; /* Adjust heading size */
     color: white; /* Change text color to white for contrast */
     margin: 0; /* Remove default margin */
     text-align: center; /* Center text */
-	background-color: #43585d;
-		margin-top: 3%;
-		padding-top: 2%;
-
+    background-color: #43585d;
+    margin-top: 3%;
+    padding-top: 2%;
 }
 
 .slider {
     overflow: hidden; /* Hide overflow */
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 3%;	
+    padding-bottom: 3%;  
     padding-top: 2%;
 }
 
@@ -56,6 +53,28 @@
     border-radius: 2px; /* Rounded corners */
     text-align: center; /* Center the title text */
     font-family: Poppins, sans-serif; 
-	font-weight: bold;
+    font-weight: bold;
     background-color: transparent; /* Ensure title background is transparent */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+    .slide {
+        flex: 0 0 100%; /* Each slide takes full width */
+        margin: 0; /* Remove margin to avoid overflow */
+        height: 300px; /* Set height to double (200px * 2) */
+    }
+
+    .slides img {
+		padding-top:2%;
+        width: 100%;
+		heigh: auto;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .slider {
+        margin-left: 0; /* Remove side margins */
+        margin-right: 0;
+    }
 }

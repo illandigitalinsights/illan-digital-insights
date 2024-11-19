@@ -1,95 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Illan Digital Insights</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="project-showcases.css">
-	<link rel="stylesheet" href="header.css">
-	<link rel="stylesheet" href="slider.css">
-	<link rel="stylesheet" href="about-me.css">
-
-	<script src="jquery-3.1.0.min.js"></script>
-	<script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illan Digital Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-showcases.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="about-me.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="main.js"></script>
 </head>
+<body>
 
 <header>
 
-<div class="cabecera">
-    <a href="index.html" title="Illan Digital Insights">
-        <img src="idi2.png" alt="Illan Digital Insights">
-    </a>
-</div>
+    <div class="cabecera">
+        <a href="index.html" title="Illan Digital Insights">
+            <img src="idi2.png" alt="Illan Digital Insights">
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Menu icon for mobile -->
+    </div>
 
-<div class="menu">
-    <ul>
-        <li id="about-me-link" style="cursor: pointer;">About Me</li>
-        <li><a href="services.html" title="Services">Services</a></li>
-        <li><a href="project-showcases.html" title="Project Showcases">Project Showcases</a></li>
-        <li id="contact-link">Contact</li>
-    </ul>
-</div>
+    <div class="menu" id="menu">
+        <ul>
+            <li id="about-me-link" style="cursor: pointer;">About Me</li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="project-showcases.html" title="Project Showcases">Project Showcases</a></li>
+            <li id="contact-link">Contact</li>
+        </ul>
+    </div>
 
-<div class="floating-page" id="floating-page">
-    <button id="close-button">X</button>
-     <div class="about-me-main">
-	  <div class = "photo">
-	  <img src="photo-frame.png"></a>
-	  </div>
-  <div class="about-me">
-    <h2>About Me</h2>
-    <p>
-        I am a marketing graduate based in St Albans, England, specializing in data-driven, digital insights and visualization. 
-		After working at Selfridges and as a consultant at Freemavens, I began my journey as a digital analyst.<br><br>
-    </p>
-    <p>
-        My education includes specialized training in GA4, SQL, Python, BigQuery, and data visualization tools such as Power BI, 
-        Looker Studio or Tableau.<br><br>
-    </p>
-    <p>
-        With a Level 4 Apprenticeship in Data Analysis and certifications in Google Analytics and Contentsquare, I strive to expand my expertise in digital marketing and data analysis while keeping up with the latest trends.<br><br>
-    </p>
-    <p>
-        <b>Connect with me to make the most of your data!</b>
-    </p>
-</div>
+    <div class="floating-page" id="floating-page">
+        <button id="close-button">X</button>
+        <div class="about-me-main">
+            <div class="photo">
+                <img src="photo-frame.png" alt="About Me">
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    I am a marketing graduate based in St Albans, England, specializing in data-driven, digital insights and visualization. 
+                    After working at Selfridges and as a consultant at Freemavens, I began my journey as a digital analyst.<br><br>
+                </p>
+                <p>
+                    My education includes specialized training in GA4, SQL, Python, BigQuery, and data visualization tools such as Power BI, 
+                    Looker Studio or Tableau.<br><br>
+                </p>
+                <p>
+                    With a Level 4 Apprenticeship in Data Analysis and certifications in Google Analytics and Contentsquare, I strive to expand my expertise in digital marketing and data analysis while keeping up with the latest trends.<br><br>
+                </p>
+                <p>
+                    <b>Connect with me to make the most of your data!</b>
+                </p>
+            </div>
+            <div class="l4">
+                <img src="l4.png" alt="Additional Info">
+            </div>
+        </div>
+    </div>
 
- <div class = "l4">
-	  <img src="l4.png"></a>
-	  </div>
-	  
+    <div class="contact" id="contact-info" style="display: none;">
+        <p>
+            <a href="tel:+4407397193661">
+                <img src="phone.png" alt="Phone" />
+            </a> 
+            (+44) 07397 193661
+        </p> 
+        <p>
+            <a href="tel:+4407397193661">
+                <img src="whatsapp.jpg" alt="WhatsApp" />
+            </a> 
+            (+44) 07397 193661
+        </p>
+        <p>
+            <a href="mailto:contact@mail.com">
+                <img src="mail.png" alt="Email" />
+            </a>
+            contact@illandigitalinsights.com
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/fatimalopezillan/" title="LinkedIn">
+                <img src="linkedin icon.jpg" alt="LinkedIn">
+            </a>
+            LinkedIn
+        </p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show'); // Toggle the 'show' class
+        }
+    </script>
+
+</header>
+
+
+<div class="portfolio-wrap">
+    <h1>Projects and Showcases</h1>
+    <div class="portfolio">
+        <div class="project">
+            <h2>Using Python to Decode and Normalize Nested JSON Data</h2>
+            <img src="cookie consent.png" alt="Project Image">
+            <p>Using Python to decode and normalize nested JSON data structures, converting them into DataFrames for easier data manipulation and analysis.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>Python</span>
+                <span>Data Table</span>
+                <span>Pandas</span>
+            </p>
+        </div>
+        
+        <div class="project">
+            <h2>Payment Methods Dashboard in PowerBI</h2>
+            <img src="payment methods pbi.png" alt="Project Image">
+            <p>A PowerBI dashboard designed to show sales and revenue generated from different payment methods, broken down by region, country, and type of payment method, with data from BigQuery.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>BigQuery</span>
+                <span>Google Analytics 4</span>
+                <span>Ecommerce Dashboard</span>
+                <span>Microsoft Power BI</span>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Looker Studio Dashboard to Reflect Sales Associated with CLPs</h2>
+            <img src="clp looker.png" alt="Project Image">
+            <p>A dashboard that reflects category listing pages performance and associated sales and revenue with data sourced from Google Analytics.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>Ecommerce</span>
+                <span>Looker Studio</span>
+                <span>Google Analytics 4</span>
+                <span>Visualization</span>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Analytics Dashboard in Looker Studio to Reflect Web KPIs</h2>
+            <img src="kxp looker.png" alt="Project Image">
+            <p>The company required a dashboard in Looker Studio to display the main KPIs from the website sourced from GA4, including trends and session data throughout the funnel, to monitor performance and detect any anomalies.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>Google Analytics 4</span>
+                <span>Sales Funnel</span>
+                <span>Website Traffic Report</span>
+                <span>Looker Studio</span>
+                <span>Data Analysis</span>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>LinkedIn Dashboard</h2>
+            <img src="linkedin looker.png" alt="Project Image">
+            <p>At the request of the marketing department, the goal was to create a dashboard that reflected the company's insights from LinkedIn.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>Google Sheets</span>
+                <span>Analytics Dashboard</span>
+                <span>Looker Studio</span>
+                <span>Visualization</span>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Creation of Tables in BigQuery</h2>
+            <img src="bq tables.jpg" alt="Project Image">
+            <p>Creating a new schema in BigQuery to set up tables that can be used across different dashboards, leveraging data from Google Analytics 4 and using SQL queries.</p>
+            <h3>Skills</h3>
+            <p class="skills">
+                <span>BigQuery</span>
+                <span>SQL</span>
+                <span>DataTables</span>
+            </p>
+        </div>
     </div>
 </div>
 
-<div class="contact" id="contact-info" style="display: none;">
-    <p>
-        <a href="tel:+4407397193661">
-            <img src="phone.png" alt="Phone" />
-        </a> 
-        (+44) 07397 193661
-    </p> 
-    <p>
-        <a href="tel:+4407397193661">
-            <img src="whatsapp.jpg" alt="WhatsApp" />
-        </a> 
-        (+44) 07397 193661
-    </p>
-    <p>
-        <a href="mailto:contact@mail.com">
-            <img src=mail.png" alt="Email" />
-        </a>
-        contact@illandigitalinsights.com
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/fatimalopezillan/" title="LinkedIn">
-            <img src="linkedin icon.jpg" alt="LinkedIn">
-        </a>
-        LinkedIn
-    </p>
-</div>
-
-</header>
+<footer class="footer">
+    <p>Reserved Rights © 2024</p>
+    <p>Designed by: Fatima Lopez Illan</p>
+    <p>Email: <a href="mailto:contact@illandigitalinsights.com">contact@illandigitalinsights.com</a></p>
+    <p>Website: <a href="http://www.illandigitalinsights.com">www.illandigitalinsights.com</a></p>
+</footer>
 
 <script>
     // Script to open the floating page for "About Me"
@@ -107,100 +203,6 @@
         contactInfo.style.display = contactInfo.style.display === 'none' || contactInfo.style.display === '' ? 'block' : 'none';
     });
 </script>
-</header>
-<body>
-<div class= "portfolio-wrap">
-
-<h1>Projects and Showcases</h1>
-
-<div class = "portfolio">
-
-<div class ="project">
-<h2>Using Python to decode and normalize nested JSON data</h2>
-<img src="cookie consent.png" alt="LinkedIn">
-<p>Using Python to decode and normalize nested JSON data structures, converting them into DFs for easier data manipulation and analysis.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>Python </span> 
-<span>Data Table </span> 
-<span>Pandas</span> 
-</P>
-</div>
-
-<div class ="project">
-<h2>Payment Methods Dashboard in PowerBI</h2>
-<img src="payment methods pbi.png" alt="LinkedIn">
-<p>A PowerBI dashboard designed to show sales and revenue generated from different payment methods, broken down by region, country, and type of payment method, with data from BigQuery.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>BigQuery </span> 
-<span>Google Analytics 4 </span> 
-<span>Ecommerce Dashboard </span> 
-<span>Microsoft Power BI</span> 
-</P>
-</div>
-
-<div class ="project">
-<h2>Looker Studio dashboard to reflect sales associated with CLPs</h2>
-<img src="clp looker.png" alt="LinkedIn">
-<p>A dashboard that reflects category listing pages performance and associated sales and revenue with data sourced from Google Analytics.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>Ecommerce </span> 
-<span>Looker Studio </span> 
-<span>Google Analytics 4 </span> 
-<span>Visualization </span> 
-<span>nalytics Dashboard </span> 
-</P>
-</div>
-
-<div class ="project">
-<h2>Analytics dashboard in Looker Studio to reflect web KPIs</h2>
-<img src="kxp looker.png" alt="LinkedIn">
-<p>The company required a dashboard in Looker Studio to display the main KPIs from the website sourced from GA4, including trends and session data throughout the funnel, to monitor performance and detect any anomalies.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>Google Analytics 4 </span> 
-<span>Sales Funnel </span> 
-<span>Website Traffic Report </span> 
-<span>Looker Studio </span> 
-<span>Data Analysis </span> 
-</P>
-</div>
-
-<div class ="project">
-<h2>LinkedIn dashboard</h2>
-<img src="linkedin looker.png" alt="LinkedIn">
-<p>At the request of the marketing department, the goal was to create a dashboard that reflected the company's insights from LinkedIn.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>Google Sheets </span> 
-<span>Analytics Dashboard </span> 
-<span>Looker Studio </span> 
-<span>Visualization </span> 
-</P>
-</div>
-
-<div class ="project">
-<h2>Creation of Tables In BigQuery</h2>
-<img src="bq tables.jpg" alt="LinkedIn">
-<p> Creating a new schema in BigQuery to set up tables that can be used across different dashboards, leveraging data from Google Analytics 4 and using SQL queries.</p>
-<h3>Skills</h3>
-<p class="skills">
-<span>BigQuery </span> 
-<span>SQL </span> 
-<span>DataTables</span> 
-</P>
-</div>
-</div>
-</div>
-
-<div class="footer">
-    <p>Reserved Rights © ; 2024</p>
-    <p>Designed by: Fatima Lopez Illan</p>
-    <p>Email: <a href="mailto:contact@illandigitalinsights.com">contact@illandigitalinsights.com</a></p>
-    <p>Website: <a href="http://www.illandigitalinsights.com">www.illandigitalinsights.com</a></p>
-</div>	
 
 </body>
 </html>

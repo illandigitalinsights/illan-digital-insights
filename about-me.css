@@ -1,7 +1,14 @@
-*{
-margin:0;
-padding:0;
-} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Default text color */
+}
 
 .floating-page {
     position: fixed;
@@ -9,11 +16,12 @@ padding:0;
     right: -100%; /* Start off-screen */
     width: 40%; /* Width of the floating page */
     height: 100%; /* Full height */
-    background-color: white; /* Background color */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    background-color: #fff; /* Background color */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
     transition: right 0.3s ease; /* Smooth transition */
-    padding: 0px; /* Padding inside the floating page */
+    padding: 2%; /* Added padding for better spacing */
     z-index: 1000; /* Ensure it appears above other content */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .floating-page.active {
@@ -25,58 +33,65 @@ padding:0;
     border: none; /* No border */
     font-size: 20px; /* Font size for close button */
     cursor: pointer; /* Pointer cursor */
+    color: #e74c3c; /* Red color for close button */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.photo {
+#close-button:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+.photo, .l4 {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
-    background-color: #43585d;
+    background-color: white; /* Darker background color for photo container */
+    color: #ecf0f1; /* Light text color for contrast */
     width: 100%; /* Set width for the photo container */
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 0%; /* Add padding for spacing */
+    padding: 2%; /* Increased padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.photo img {
-    max-width: 30%; /* Ensure the image scales responsively */
+.photo img, .l4 img {
+    max-width: 45%; /* Ensure the image scales responsively */
     height: auto; /* Maintain aspect ratio */
-	margin-top:1%;
+    margin-top: 1%; /* Space above images */
+    border-radius: 5px; /* Rounded image corners */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.photo img:hover, .l4 img:hover {
+    transform: scale(1.20); /* Slightly enlarge image on hover */
 }
 
 .about-me {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
-    background-color: white;
-    padding: 1%; /* Add padding for spacing */
-    padding-top:1%;
-	padding-left:3%;
-	padding-right:3%;
+    background-color: #fff; /* White background for content */
+    padding: 2%; /* Increased padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .about-me h2 {
     margin-bottom: 15px; /* Space below the heading */
-    font-size: 1.5rem; /* Increase font size for the heading */
-    color: #333; /* Dark grey color for better readability */
-	font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 1.8rem; /* Increase font size for the heading */
+    color: #34495e; /* Darker blue-grey for better readability */
 }
 
 .about-me p {
-    line-height: 1.2; /* Improve line spacing for readability */
-
+    line-height: 1.6; /* Improve line spacing for readability */
     color: #555; /* Slightly lighter grey for text color */
-	font-family: 'Poppins', sans-serif; /* Use Poppins font */
 }
-.l4 {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    background-color: white;
-    width: 100%; /* Set width for the photo container */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 1%; /* Add padding for spacing */
-}
-.l4 img {
-    max-width: 30%; /* Ensure the image scales responsively */
-    height: auto; /* Maintain aspect ratio */
-	margin-top:1%;
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .floating-page {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .photo img, .l4 img {
+        max-width: 80%; /* Increase image size on mobile */
+    }
 }

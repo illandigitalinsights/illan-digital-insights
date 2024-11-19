@@ -1,33 +1,29 @@
 
   .services-wrap {
-			margin-top: 1%;
-			background-color: #f4f4f4;
-			padding-bottom:2%;
-        }
+    margin-top: 1%;
+    background-color: #f4f4f4;
+    padding-bottom: 2%;
+}
 
-        .container {
-
-			   margin: 2% auto; /* Center the grid in the page */
+.container {
+    margin: 2% auto; /* Center the grid in the page */
     max-width: 70%; /* Maximum width for the grid container */
-	margin-top:1%;
-	padding-top: 2%; /* Inner padding */
-	font-family: 'Poppins', sans-serif;
+    padding: 2% 0; /* Inner padding */
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4; /* Light background for contrast */
-        }
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom:1%;
-			margin-top: 3%;
-            color: black;
-			font-size: 1.5rem;
-        }
-		
-		 .container .services-description{
-			margin-top: 5%;
-			
-		}
-		
+h1 {
+    text-align: center;
+    margin: 1% 0 1%; /* Top margin and bottom margin */
+    color: black;
+    font-size: 1.5rem;
+}
+
+.container .services-description {
+    margin-top: 5%;
+}
+
 .icon {
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center horizontally */
@@ -38,81 +34,128 @@
     width: auto; /* Keep the width auto for aspect ratio */
     height: 60px; /* Set a fixed height */
 }
-		
 
-        .service {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 5%;
-            padding: 2%;
-            transition: transform 0.3s;
-			margin-top:2%;
-			
-        }
-
-        .service:hover {
-            transform: translateY(-5px);
-        }
-
-        .service h2 {
-            margin-bottom: 10px;
-            color: black;
-			font-size: 1.2rem;
-        }
-
-        .service p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .service ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px; /* Space between icons */
-        }
-
-        .service ul li {
-            padding: 5px;
-            color: #333;
-            display: flex;
-            align-items: center;
-        }
-
-.tool-images {
-    display: flex; /* Use flexbox to align images in a row */
-    gap: 3%; /* Space between images */
-    margin-top: 10px; /* Space above the images */
+.service {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 1% 0; /* Space above and below each service */
+    padding: 1%;
+    transition: transform 0.3s;
 }
 
-.tool-images li {
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.service p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service ul {
     list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px; /* Space between icons */
 }
 
-.tool-images img {
-    width: auto; /* Adjust size of the icons */
-    height: 60px; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images cover the space */
+.service ul li {
+    padding: 5px;
+    color: #333;
+    display: flex;
+    align-items: center; /* Center icons vertically */
 }
 
-        @media (max-width: 768px) {
-            .service {
-                padding: 15px;
-            }
 
-            .service h2 {
-                font-size: 1.6rem;
-            }
-        }
+
+
+.services_slider {
+    overflow: hidden; /* Hide overflow */
+    margin: 0 auto; /* Center the slider */
+    width: 80%; /* Full width */
+	margin-bottom:7%;
+	
+}
+
+.services_slides {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+
+}
+
+.services_tool-images {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display list items in a row */
+	width: 120%; /* Display 3 images at a time */
+
+}
+
+
+
+.services_tool-images img {
+    width: 100%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below images */
+    object-fit: contain; /* Ensure the whole image is visible */
+}
+
+.services_tool-images li {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 15%; /* Adjust width as needed */
+    padding: 10px; /* Space around images */
+}
+
+
+.services_tool-images img:hover{
+    transform: scale(1.20); /* Slightly enlarge image on hover */
+}
+
+
 .footer {
-	font-family: Poppins, sans-serif; 
+    font-family: Poppins, sans-serif; 
     font-size: 0.8rem; /* Adjust heading size */
-    color: white; /* Change text color to white for contrast */
+    color: white; /* Text color for contrast */
     text-align: center; /* Center text */
-	background-color: #283234;
-		padding-top: 2%;
-		padding-bottom: 2%;
+    background-color: #283234;
+    padding: 2% 0; /* Top and bottom padding */
+}
+
+.footer a {
+        color: #40E0D0; /* Light turquoise color */
+        text-decoration: none; /* Optional: remove underline */
+    }
+
+ .footer a:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+	
+	.services_tool-images img {
+    width: 90%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below images */
+    object-fit: contain; /* Ensure the whole image is visible */
+}
+    .services_tool-images li {
+        width: calc(50% - 0px); /* Display 3 images at a time */
+    }
+	
+	.services_slider {
+    margin-top: 7%;
+	margin-bottom:10%;
+	
+}
 }

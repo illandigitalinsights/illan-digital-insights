@@ -1,20 +1,23 @@
-*{
-margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .main {
     display: flex; /* Use flexbox for layout */
     width: 100vw; /* Full viewport width */
-    background-color: #43585d;
+    background-color: #43585d; /* Background color */
     margin-top: 1%; /* Adjust as needed */
+    align-items: stretch; /* Stretch items to same height */
 }
+
 .profile {
     display: flex; /* Make the list a flex container */
-    width: 70%; /* Make it full width */
+    width: 70%; /* Width of profile section */
     padding: 0; /* Remove default padding */
     list-style-type: none; /* Remove bullet points */
-    margin-left: 15%; /* Remove default margin */
+    margin-left: 15%; /* Center the profile section */
     align-items: stretch; /* Make all items stretch to the same height */
 }
 
@@ -23,71 +26,58 @@ padding:0;
 }
 
 .profile img {
-    width: 100%; /* Image covers the full width of the left half */
+    width: 100%; /* Image covers the full width of the profile item */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Ensure main matches the height of the tallest profile image */
-.main {
-    align-items: stretch; /* Stretch the main container to match profile items */
+.profile .profile-summary {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    margin: 0; /* Remove default margins */
+    padding: 1.8rem; /* Add padding for text */
+    color: white; /* Text color */
+    margin-left: 20%; /* Adjust as needed */
+    margin-top: 5%; /* Adjust as needed */
 }
 
-.profile .profile-summary {
-	font-family: Poppins, sans-serif; /* Use Poppins font */;
-    margin: 0; /* Remove default margins */
-    padding: 1.8rem; /* Add some padding for text */
-	color: white;
-	margin-left: 20%; /* Adjust as needed */
-    margin-top: 5%; /* Adjust as needed */
-
+.profile h1, .profile h3, .profile p, .profile ul {
+    font-family: 'Poppins', sans-serif; /* Consistent font family */
+    color: white; /* Text color */
 }
 
 .profile h1 {
-	font-family: Poppins, sans-serif; 
-    font-size: 1.5rem; /*Adjust heading size */
-	color: white;
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 15px; /* Space below the heading */
 }
-.profile h3{
-	font-family: Poppins, sans-serif; 
-    font-size: 1.3rem; /* Adjust heading size */
-	color: white;
+
+.profile h3 {
+    font-size: 1.3rem; /* Subtitle size */
+    margin-bottom: 10px; /* Space below subtitle */
 }
 
 .profile p {
-	font-family: Poppins, sans-serif; 
-    font-size: 1rem; /* Adjust paragraph size */
-	color: white;
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.5; /* Improve readability */
 }
 
-.profile ul 
-
-{
-    font-size: 1rem; /* Adjust paragraph size */
-	font-family: Poppins, sans-serif; 
-	color: white;
-}
 .tool-services {
-	
-	margin-top: 2%; /* Space below the heading */
+    margin-top: 2%; /* Space below the heading */
     text-align: center; /* Center the heading */
-		font-family: Poppins, sans-serif; 
-	  color: #283234; /* Title color */	
+    font-family: 'Poppins', sans-serif; 
+    color: #283234; /* Title color */	
 }
 
 .tools {
-	width: 80%;
-	margin-left:10%;
-		margin-top: 1%; /* Space below the heading */
+    width: 80%;
+    margin: 1% auto; /* Center tools section */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center tools horizontally */
     flex-wrap: wrap; /* Allow wrapping */
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tool {
     margin: 2%; /* Space between tools */
-	width: 20%;
-	height:50%;
+    width: 20%; /* Fixed width for tools */
     display: flex; /* Use flexbox for layout of image and title */
     flex-direction: column; /* Stack image on top of title */
     align-items: center; /* Center items */
@@ -95,39 +85,41 @@ padding:0;
 }
 
 .tool img {
-    width: 60%; /* Maintain original width */
+    width: 80%; /* Maintain original width */
     height: 120px; /* Set a fixed height for all images */
 }
 
 .tool .title {
     margin-top: 5px; /* Space between image and title */
     font-family: 'Poppins', sans-serif; /* Use Poppins font */
-    font-size: 1rem; /* Adjust font size */
-    margin-top: 5px; /* Space between image and title */
+    font-size: 1rem; /* Title font size */
     color: black; /* Title color */
     padding: 5px; /* Padding around title */
     border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center the title text */
-	font-family: Poppins, sans-serif; 
     text-decoration: underline; /* Underline the text */
     font-weight: bold; /* Make the font bold */
 }
 
-
-
 .footer {
-	font-family: Poppins, sans-serif; 
-    font-size: 0.8rem; /* Adjust heading size */
+    font-family: 'Poppins', sans-serif; 
+    font-size: 0.8rem; /* Footer font size */
     color: white; /* Change text color to white for contrast */
     margin: 0; /* Remove default margin */
     text-align: center; /* Center text */
-	background-color: #283234;
-		padding-top: 2%;
-		padding-bottom: 2%;
+    background-color: #283234; /* Footer background color */
+    padding: 2% 0; /* Padding for top and bottom */
 }
 
-/* Mobile */
+.footer a {
+        color: #40E0D0; /* Light turquoise color */
+        text-decoration: none; /* Optional: remove underline */
+    }
 
+ .footer a:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     .main {
         flex-direction: column; /* Stack items vertically on mobile */
@@ -135,21 +127,19 @@ padding:0;
     }
 
     .profile {
-        display: block;
         width: 100%; /* Full width on mobile */
         margin-left: 0; /* Remove left margin on mobile */
+        display: block; /* Stack profile items */
     }
 
     .profile li {
         margin-bottom: 1rem; /* Add spacing between items */
         display: block; /* Ensure each list item is displayed as a block */
-}
+    }
 
-.profile img {
-    width: 100%; /* Image covers the full width of the list item */
-    height: auto; /* Maintain aspect ratio */
-}
-
+    .profile img {
+        width: 100%; /* Image covers the full width of the list item */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .profile .profile-summary {
@@ -158,17 +148,17 @@ padding:0;
         padding: 1rem; /* Adjust padding for smaller screens */
     }
 
-.tools { 
-    display: block; /* Use flexbox for layout */  
-}
+    .tools { 
+        display: block; /* Stack tools vertically */
+    }
 
-.tool {
-    margin: 2%; /* Space between tools */
-	width: 80%;
-	height:50%;
-    display: flex; /* Use flexbox for layout of image and title */
-    flex-direction: column; /* Stack image on top of title */
-    align-items: center; /* Center items */
-    text-align: center; /* Center text */
-}
+    .tool {
+        margin: 8%; /* Space between tools */
+        width: 80%; /* Width for mobile */
+    }
+
+    .tool img {
+        width: 40%; /* Maintain original width */
+        height: 100px; /* Set a fixed height for all images */
+    }
 }

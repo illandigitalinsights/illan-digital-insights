@@ -16,20 +16,20 @@ header {
     display: flex; /* Use flexbox for centering */
     justify-content: left; /* Align items to the left */
     padding-top: 3%; /* Adjust as needed */
-    margin-left: 15%; /* Adjust as needed */
-	margin-top:-2%;
+    margin-left: 10%; /* Adjust as needed */
+	padding-bottom: 2%;
 }
 
 .cabecera img {
-    width: 15vw; /* Set width to 15% of the viewport width */
+    width: 20vw; /* Set width to 15% of the viewport width */
     height: auto; /* Maintain aspect ratio */
 }
 
 .menu {
     background-color: white; /* White background */
     padding: 0.5%; /* Add some padding */
-    margin-top: -2%; /* Adjust as needed */
-    margin-right: 15%;
+    margin-right: 10%;
+    margin-top:-5%;
 }
 
 .menu ul {
@@ -94,22 +94,27 @@ header {
 
 @media (max-width: 768px) {
 
+
 .cabecera img {
-    width: 70vw; /* Set width to 15% of the viewport width */
+    width: 60vw; /* Set width to 15% of the viewport width */
     height: auto; /* Maintain aspect ratio */
+	margin:10%;
+
 }
     .menu {
         display: none; /* Hide the menu by default on mobile */
         flex-direction: column; /* Stack menu items vertically */
         width: 100%; /* Full width */
+		margin:3%;
     }
 
-  .menu-icon {
+.menu-icon {
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 2rem; /* Increase icon size */
-    margin-left: 15px; /* Add space between icon and menu */
-    float: left; /* Floats the element to the left */
-    
+    position: fixed; /* Fix the icon to the viewport */
+    left: 15px; /* Distance from the left edge of the screen */
+    top: 15px; /* Distance from the top edge of the screen */
+    z-index: 1000; /* Ensure it is above other elements */
 }
 
     .menu li {
@@ -120,7 +125,7 @@ header {
     list-style-type: none; /* Remove default bullet points */
     display: block; /* Use block display for vertical layout */
     padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    margin-top:-5%; /* Remove default margin */
 }
 
 .menu ul li {
@@ -137,6 +142,7 @@ header {
 .contact {
     margin-left: 5%; /* Reduce left margin */
     margin-right: 5%; /* Reduce right margin */
+
 }
 
 .contact p {
@@ -148,4 +154,12 @@ header {
     .menu-icon {
         display: none; /* Hide the menu icon on larger screens */
     }
+	
+	.cabecera {
+
+	height:50%;
+}
+
+
+
 }
