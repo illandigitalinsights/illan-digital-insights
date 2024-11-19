@@ -156,6 +156,20 @@ h1 {
 	.services_slider {
     margin-top: 7%;
 	margin-bottom:10%;
+	}
 	
+	.container {
+    margin: 0% auto; /* Center the grid in the page */
+    max-width: 90%; /* Maximum width for the grid container */
+    padding: 2% 2%; /* Inner padding */
+
 }
+
+	.service {
+    margin: 5% 1%;
+
+
+}
+	
+
 }
