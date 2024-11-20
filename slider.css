@@ -55,7 +55,16 @@
     font-family: Poppins, sans-serif; 
     font-weight: bold;
     background-color: transparent; /* Ensure title background is transparent */
+	text-decoration: none; /* Remove underline from links */
+	margin-top:10%;
 }
+
+
+.slide a {
+    text-decoration: none; /* Remove underline from links */
+	
+}
+
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
