@@ -183,7 +183,7 @@ header{
     }
 
     .tool img {
-        width: 60%; /* Maintain original width */
+        width: 80%; /* Maintain original width */
         height: 100px; /* Set a fixed height for all images */
     }
 	
