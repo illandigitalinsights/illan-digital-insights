@@ -30,6 +30,7 @@ header {
     padding: 0.5%; /* Add some padding */
     margin-right: 10%;
     margin-top:-5%;
+	padding-bottom:3%;
 }
 
 .menu ul {
@@ -71,7 +72,6 @@ header {
     background-color: #f9f9f9; /* Light background for the contact section */
     border: 1px solid #ccc; /* Light border */
     padding: 0.5%; /* Padding for spacing */
-    margin-top: 1%; /* Space above the contact section */
     margin-left: 15%; 
     margin-right: 15%; 
 	
@@ -87,6 +87,12 @@ header {
     width: 20px; /* Adjust icon size */
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Space between image and text */
+}
+
+#contact-info {
+
+    padding-left: 20px; /* Optional padding for better spacing inside */
+
 }
 
 
@@ -106,6 +112,7 @@ header {
         flex-direction: column; /* Stack menu items vertically */
         width: 100%; /* Full width */
 		margin:3%;
+
     }
 
 .menu-icon {

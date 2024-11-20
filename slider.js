@@ -27,7 +27,7 @@ function slide() {
 }
 
 // Set interval for automatic sliding
-setInterval(slide, 3000); // Change image every 3 seconds
+setInterval(slide, 1000); // Change image every 1 seconds
 
 // Update the slide on resize to accommodate responsive design
 window.addEventListener('resize', () => {

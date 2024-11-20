@@ -4,11 +4,15 @@
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+header{
+	margin-bottom: 0px;
+}
+
 .main {
     display: flex; /* Use flexbox for layout */
     width: 100vw; /* Full viewport width */
     background-color: #43585d; /* Background color */
-    margin-top: 1%; /* Adjust as needed */
+    margin-top: 0%; /* Adjust as needed */
     align-items: stretch; /* Stretch items to same height */
 }
 
@@ -45,7 +49,7 @@
 }
 
 .profile h1 {
-    font-size: 1.5rem; /* Heading size */
+    font-size: 1.2rem; /* Heading size */
     margin-bottom: 15px; /* Space below the heading */
 }
 
@@ -64,6 +68,14 @@
     text-align: center; /* Center the heading */
     font-family: 'Poppins', sans-serif; 
     color: #283234; /* Title color */	
+}
+
+
+
+.tool-services h1{
+    font-size: 1.7rem; /* Subtitle size */
+
+	
 }
 
 .tools {
@@ -85,7 +97,7 @@
 }
 
 .tool img {
-    width: 80%; /* Maintain original width */
+    width: 100%; /* Maintain original width */
     height: 120px; /* Set a fixed height for all images */
 }
 
@@ -118,6 +130,19 @@
  .footer a:hover {
         text-decoration: underline; /* Optional: underline on hover */
     }
+	
+.footer .footer_logo {
+   margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.footer .footer_logo  img {
+    width: 3%;
+	height: auto;
+    display: block;         
+    margin: 0 auto; 
+}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -161,4 +186,18 @@
         width: 60%; /* Maintain original width */
         height: 100px; /* Set a fixed height for all images */
     }
+	
+	.footer .footer_logo {
+   margin-top: 5%;
+   margin-bottom:3%;
+
+}
+	
+    .footer .footer_logo  img {
+    width: 7%;
+	height: auto;
+    display: block;         
+    margin: 0 auto; 
+}
+
 }

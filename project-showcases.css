@@ -44,7 +44,7 @@
 }
 
 .project h2 {
-    font-size: 1.5rem; /* Increased heading size */
+    font-size: 1rem; /* Increased heading size */
     color: #333; /* Dark text color */
     margin-bottom: 10px; /* Space below the heading */
 }
@@ -61,7 +61,7 @@
 }
 
 .project h3 {
-    font-size: 1.1rem; /* Increased subheading size */
+    font-size: 1rem; /* Increased subheading size */
     color: #333; /* Dark text color */
     margin-top: 10px; /* Space above the subheading */
 }
@@ -99,12 +99,37 @@
  .footer a:hover {
         text-decoration: underline; /* Optional: underline on hover */
     }
+	
+.footer .footer_logo {
+   margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.footer .footer_logo  img {
+    width: 3%;
+	height: auto;
+    display: block;         
+    margin: 0 auto; 
+}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .portfolio {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust columns */
     }
+	
+	.footer .footer_logo {
+   margin-top: 5%;
+   margin-bottom:3%;
+}
+	
+    .footer .footer_logo  img {
+    width: 7%;
+	height: auto;
+    display: block;         
+    margin: 0 auto; 
+}
+
 }
 
 @media (max-width: 480px) {
