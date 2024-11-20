@@ -122,6 +122,8 @@ header {
     left: 15px; /* Distance from the left edge of the screen */
     top: 15px; /* Distance from the top edge of the screen */
     z-index: 1000; /* Ensure it is above other elements */
+    position: fixed; /* Fix the icon to the viewport */
+
 }
 
     .menu li {
