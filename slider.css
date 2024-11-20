@@ -72,7 +72,7 @@
     .slide {
         flex: 0 0 100%; /* Each slide takes full width */
         margin: 0; /* Remove margin to avoid overflow */
-        height: 300px; /* Set height to double (200px * 2) */
+        height: 350px; /* Set height to double (200px * 2) */
     }
 
     .slides img {
